@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<robot name="mpbot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<xacro:property name="Standard_friction" value="1.0" />
+<xacro:property name="Wheel_friction" value="10.0" />
+<xacro:property name="Wheel0_friction" value="0.01" />
+
+
+<gazebo reference="base_link">
+  <mu1>${Standard_friction}</mu1>
+  <mu2>${Standard_friction}</mu2>
+  <selfCollide>true</selfCollide>
+  <gravity>true</gravity>
+</gazebo>
+
+<gazebo reference="Wheel_1_1">
+  <mu1>${Wheel0_friction}</mu1>
+  <mu2>${Wheel0_friction}</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="Wheel_3_1">
+  <mu1>${Wheel_friction}</mu1>
+  <mu2>${Wheel_friction}</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="Wheel_2_1">
+  <mu1>${Wheel0_friction}</mu1>
+  <mu2>${Wheel0_friction}</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="Wheel_4_1">
+  <mu1>${Wheel_friction}</mu1>
+  <mu2>${Wheel_friction}</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+</robot>
