@@ -3,7 +3,7 @@
 
 <xacro:property name="Standard_friction" value="1.0" />
 <xacro:property name="Wheel_friction" value="10.0" />
-<xacro:property name="Wheel0_friction" value="0.01" />
+<xacro:property name="Wheel0_friction" value="10" />
 
 
 <gazebo reference="base_link">
